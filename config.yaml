@@ -1,0 +1,46 @@
+#DATASET
+DATASET:
+    TRAIN_LIST: "/home/jhebu/dataset/CoronaryArtery/challengedata/train.lst"
+    VALIDATE_LIST: "/home/jhebu/dataset/CoronaryArtery/challengedata/validate.lst"
+    TEST_LIST: "/home/jhebu/dataset/CoronaryArtery/challengedata/train.lst"
+    PATCH_SIZE: [32, 32, 32]
+    SAMPLE_NUMBER: 1000
+#MODEL
+MODEL:
+    NAME: "da_resnet34_3d"
+    DIM: "3d"
+    BN: "bn"
+    INPUT_CHANNEL: 3
+    NCLASS: 2
+
+#SOLVER
+SOLVER:
+    NAME: "Adam"
+    LEARN_RATE: 0.001
+    LR_MODE: "poly"
+    LR_STEPS: 40
+    EPOCHS: 1000000
+    MOMENTUM: 0.9
+    WEIGTH_DECAY: 0.001
+
+#LOSS
+LOSS:
+    TYPE: "ce_loss+dice_loss+mse_loss"
+    WEIGHT: [1.0, 1.0, 2.0]
+    CLASS_WEIGHT: [1.0, 10.0]
+    IGNORE_INDEX: -100
+    
+#TRAIN
+TRAIN:
+    WORKER: 1
+    BATCH_SIZE: 128
+        
+#VALIDATAE
+VALIDATE:
+    WORKER: 1
+    BATCH_SIZE: 128
+
+#TEST
+TEST:
+    WORKER: 1
+    BATCH_SIZE: 1

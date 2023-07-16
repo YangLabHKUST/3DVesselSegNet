@@ -1,1 +1,1 @@
-# 3DVesselSegNet
+# Artery_AAAI
