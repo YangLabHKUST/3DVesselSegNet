@@ -1,7 +1,7 @@
 # 3DVesselSegNet
 A hybrid representation learning approach for fully automatic and template-free vessel centerline extraction.
 
-![3DVesselSegNet]([https://github.com/YangLabHKUST/SpatialScope/blob/master/mainfig-flowchat.jpg](https://github.com/YangLabHKUST/3DVesselSegNet/blob/main/figure2_2_compressed.pdf))
+![3DVesselSegNet]([https://github.com/YangLabHKUST/3DVesselSegNet/blob/main/figure2_2_compressed.pdf])
 
 ## Installation
 ``` shell
