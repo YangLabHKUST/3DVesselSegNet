@@ -3,6 +3,8 @@ A hybrid representation learning approach for fully automatic and template-free 
 
 ![3DVesselSegNet](https://github.com/YangLabHKUST/3DVesselSegNet/blob/main/3Dvesselsegnet_framework.png)
 
+![hpc](coronary_artery_seg_demo.gif) ![hpc](coronary_artery_seg_demo.gif)
+
 ## Installation
 ``` shell
 $ git clone https://github.com/YangLabHKUST/SpatialScope.git
